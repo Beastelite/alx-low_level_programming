@@ -8,10 +8,10 @@ int main(void)
 	int i, j;
 
 	i = 0;
-	while (i <= 99)
+	while (i < 100)
 	{
 		j = 0;
-		while (j <= 99)
+		while (j < 100)
 		{
 			if (i < j)
 			{
@@ -20,7 +20,7 @@ int main(void)
 				putchar(' ');
 				putchar((j / 10) + 48);
 				putchar((j % 10) + 48);
-				if (i != 98 || j != 98)
+				if (i != 98 || j != 99)
 				{
 					putchar(',');
 					putchar(' ');
