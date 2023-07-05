@@ -18,7 +18,7 @@ int _sqrt_recursion(int n)
  * @i: repeater
  * Return: the resultant root of the tied no.
  */
-int _sqrt_(int n, int i)
+int _sqrt(int n, int i)
 {
 	int sqrt = i * i;
 
