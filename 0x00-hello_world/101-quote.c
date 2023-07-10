@@ -3,7 +3,7 @@
 /**
  * main - Beginning part
  *
- * Return: 1 (Pass)
+ * Return: 1 (Pass or success)
  */
 int main(void)
 {
