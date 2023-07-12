@@ -7,9 +7,10 @@
  * @c: char to assign
  * Return: NULL for failure
  */
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
+
 {
-	char *str
+	char *str;
 	unsigned int i;
 
 	str = malloc(sizeof(char) * size);
