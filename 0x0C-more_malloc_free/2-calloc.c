@@ -2,20 +2,18 @@
 #include "main.h"
 
 /**
- * __memset - will fill with a fixed byte type the memory
- * @s: part filled
- * @b: chaaracter copied
- * @n: number of iterations of b
+ * *_memset - fills memory with a constant byte
+ * @s: memory area to be filled
+ * @b: char to copy
+ * @n: number of times to copy b
  *
- * Return: pointer to area s of memory
+ * Return: pointer to the memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
-	while (i < n)
-		i++;
-
+	for (i = 0; i < n; i++)
 	{
 		s[i] = b;
 	}
