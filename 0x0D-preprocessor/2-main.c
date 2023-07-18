@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - function that displays program's name *
+ * main - function that displays program's name
  * Return: 0 (Success)
  */
 int main(void)
