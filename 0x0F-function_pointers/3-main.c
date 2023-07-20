@@ -5,7 +5,7 @@
 /**
  * main - Prints the result operation done
  * @argc: number of arguments supplied to the program.
- * @argv: An array of pointers to the 
+ * @argv: An array of pointers to the
  * arguments(ARGUMENT VECTOR)
  * Return: Always 0.
  */
