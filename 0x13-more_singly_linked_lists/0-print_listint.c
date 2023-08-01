@@ -1,32 +1,22 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
 
 /**
- * main - check the code
- * 
- * Return: Always 0.
- */
-int main(void)
-{
-    listint_t *head;
-    listint_t *new;
-    listint_t hello = {8, NULL};
-    size_t n;
+ * print_listint - print all elemement to stdout
+ * @h: pointer to a singly liked list.
+ * Return: an int.
+ **/
 
-    head = &hello;
-    new = malloc(sizeof(listint_t));
-    if (new == NULL)
-    {
-        printf("Error\n");
-        return (1);
-    }
-    new->n = 9;
-    new->next = head;
-    head = new;
-    n = print_listint(head);
-    printf("-> %lu elements\n", n);
-    free(new);
-    return (0);
+size_t print_listint(const listint_t *h)
+{
+	const listint_t *tp;
+	unsigned int cntr = 0;
+
+	tp = h;
+	while (tp)
+	{
+		printf("%d\n", tp->n);
+		cntr++;
+		tp = tp->next;
+	}
+	return (cntr);
 }
