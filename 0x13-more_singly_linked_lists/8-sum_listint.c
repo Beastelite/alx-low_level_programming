@@ -1,25 +1,24 @@
 #include "lists.h"
-#include <stdlib.h>
 
 /**
- * get_nodeint_at_index - Find node at position index in a list.
- * @head: Address of the first node in a list.
- * @index: Position of a the node to find (starting from 0).
- * Return: Pointer to he found node
- **/
-
-
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+ * sum_listint - returns the sum of all the data (n) of a
+ * listint_t linked list
+ * @head: pointer to head of list
+ * Return: sum of list
+ */
+int sum_listint(listint_t *head)
 {
-	unsigned int y = 0;
+	listint_t *current;
 
-	if (head == NULL)
-		return (NULL);
-	for (y = 0; y < index; y++)
+	register int sum = 0;
+
+	if (!head)
+		return (0);
+	current = head;
+	while (current)
 	{
-		head = head->next;
-		if (head == NULL)
-			return (NULL);
+		sum += current->n;
+		current = current->next;
 	}
-	return (head);
+	return (sum);
 }
