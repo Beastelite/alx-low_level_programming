@@ -1,13 +1,16 @@
 #include "main.h"
 
 /**
- * get_endianness - looks into the machine and determines
- * if it's an enormous or tiny endian
- * Return: 0 definte big(Always), 1 tiny/little
+ * get_endianness - Looks into machine and determines if
+ * it's an enormous or minute endian
+ * Return: 0 definite enormous(Success always
+ * ), 1 tiny/little
  */
 int get_endianness(void)
 {
-	unsigned int r = 1;
-	char *c = (char *) &r;
+	unsigned int i = 1;
+	char *c = (char *) &i;
 
 	return (*c);
+}
+
