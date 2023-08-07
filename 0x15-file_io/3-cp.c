@@ -47,7 +47,7 @@ void close_file(int fd)
  * main - generates duplicates of the content of a
  * file to another file
  * @argc: shows the number of argument supplied to the program
- * @argv: simply put - this is to refer to the array 
+ * @argv: simply put - this is to refer to the array
  * of pointers to the arguments
  * Return: 0 (Success all  the time)
  * Description: for incorrect count of arguments the exit code
